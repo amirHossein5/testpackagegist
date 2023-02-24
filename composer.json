@@ -1,0 +1,41 @@
+{
+    "name": "crispcode/laravel-influx-db",
+    "description": "Logging to influx db for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [],
+    "autoload": {
+        "psr-4": {
+            "CrispCode\\LaravelInfluxDB\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CrispCode\\LaravelInfluxDB\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CrispCode\\LaravelInfluxDB\\InfluxDBServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "influxdata/influxdb-client-php": "^3.2"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0",
+        "phpunit/phpunit": "^9.5",
+        "nunomaduro/larastan": "^2.4",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
+
+
